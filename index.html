@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a0718">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Virtual Stations">
+  <meta name="description" content="A 7-stop devotional journey through virtue, mercy, and courage. A Saintapedia project.">
+  <meta property="og:title" content="Seven Stations of Virtue — A Saintapedia Project">
+  <meta property="og:description" content="Walk through 7 stations of virtue, mercy, and courage. Unlock prayers. Make a commitment.">
+  <meta property="og:url" content="https://saintapedia.org/">
+  <title>Seven Stations of Virtue — A Saintapedia Project</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app"></div>
+  <footer class="copyright-footer">
+    &copy; <span id="copy-year"></span> Saintapedia. All rights reserved.
+    <a href="https://saintapedia.org/" target="_blank" rel="noopener">saintapedia.org</a>
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
