@@ -828,6 +828,90 @@ h1, h2, h3, .serif { font-family: 'Cinzel', serif; }
   to   { transform: translateY(110vh) rotate(720deg); opacity: 0; }
 }
 
+/* ================================================================
+   ADVENTURE SELECT SCREEN
+   ================================================================ */
+.adv-select-screen {
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.adv-select-heading {
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  color: var(--gold-lt);
+  text-align: center;
+  margin-bottom: 4px;
+}
+.adv-select-sub {
+  font-size: .82rem;
+  color: var(--text3);
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.adv-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.adv-card {
+  background: var(--card);
+  border: 2px solid var(--adv-color, var(--card-border));
+  border-radius: var(--radius);
+  padding: 24px 22px 20px;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.adv-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--adv-color-light, transparent);
+  pointer-events: none;
+}
+.adv-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.5);
+}
+.adv-card:active { transform: translateY(0); }
+
+.adv-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px var(--adv-color, transparent));
+}
+.adv-title {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.adv-subtitle {
+  font-size: .85rem;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+.adv-stops {
+  font-size: .75rem;
+  color: var(--adv-color, var(--text3));
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.adv-begin-arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: .82rem;
+  color: var(--adv-color, var(--gold));
+  letter-spacing: .05em;
+}
+
 /* ── Copyright footer ──────────────────────────────────────────── */
 .copyright-footer {
   position: fixed;
